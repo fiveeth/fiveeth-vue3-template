@@ -1,0 +1,39 @@
+{
+  "name": "fiveeth-vue3-template",
+  "private": false,
+  "version": "1.1.0",
+  "type": "module",
+  "keywords": ["template","vue"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fiveeth/fiveeth-vue3-template"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "files": ["lib"],
+  "main": "lib/fiveeth-vue3-template.umd.js",
+  "module": "lib/fiveeth-vue3-template.mjs",
+  "exports": {
+    "./lib/style.css":"./lib/style.css",
+    ".":{
+      "import" : "./lib/fiveeth-vue3-template.mjs",
+      "require": "./lib/fiveeth-vue3-template.umd.js"
+    }
+  },
+  "dependencies": {
+    "fiveeth-vue3-component": "^1.1.0",
+    "fiveeth-vue3-table-component": "^1.0.0",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.10",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "vite": "^5.0.11"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "fiveeth-vue3-template",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "keywords": ["template","vue"],
   "repository": {
